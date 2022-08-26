@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Roboto;
+}
+.logo {
+  width: 130px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: plum;
+  z-index: 2;
+}
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  color: green;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.nav-toggle:hover {
+  color: red;
+  transform: scale(1.2);
+}
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-family: Verdana;
+}
+.nav-link:hover {
+  /* background: #3f0303; */
+  padding: 1.5rem;
+}
+.btn {
+  display: none;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+}
+.show-links {
+  height: 280px;
+}
+.left-section h1 {
+  margin-top: 8rem;
+  color: palevioletred;
+  margin-left: 5rem;
+  margin-right: 4rem;
+  width:15rem;
+}
+.left-section h4 {
+  width: 16rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 4rem;
+  color: #000;
+}
+.hero-img {
+  width: 25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-btn {
+  background: linear-gradient(to right, #6e6eeb, purple);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-family: Roboto;
+    position: absolute;
+    background: url("../images/backcover.svg") no-repeat right top;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .navbar {
+    background: none;
+    padding: unset;
+    margin: unset;
+  }
+  .btn {
+    display: block;
+    font-family: Verdana;
+    background: linear-gradient(to right, #6e6eeb, purple);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 1rem 5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .nav-center {
+    display: flex;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .hero-btn {
+    margin-left: 7rem;
+  }
+  .left-section h1 {
+    margin-top: 13rem;
+    font-size: 3rem;
+    color: #6e6eeb;
+    margin-left: 7rem;
+    width:20rem;
+  }
+  .left-section h4 {
+    margin-top: 12px;
+    width: 27rem;
+  }
+  .intro-section {
+    /* border:2px solid rebeccapurple; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .vector-img {
+    position: absolute;
+    bottom: 15%;
+    left: 35%;
+  }
+  .vector-dot {
+    position: absolute;
+    left: 39%;
+    bottom: 29%;
+  }
+
+  .imgs-div img:last-child {
+    margin-top: 8rem;
+    width: 550px;
+  }
+}

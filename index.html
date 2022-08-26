@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Design Landing Page</title>
+  </head>
+  <body>
+      <nav class="navbar">
+        <div class="nav-center">
+          <!--Nav Header-->
+          <div class="nav-header">
+            <img src="./images/logo.svg" alt="logo">
+            <button type="button" class="nav-toggle" id="nav-toggle"> 
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <!--End Of Nav-->
+
+          <!--Nav Links-->
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">History</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button type="submit" class="btn">Sign Up</button>
+        </div>
+      </nav>
+
+
+      <!---Hero Section--->
+      <div class="intro-section">
+        <div class="left-section">
+          <h1>Web Design</h1>
+          <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam, quidem.
+          </h4>
+          <button class="hero-btn">LEARN MORE</button>
+        </div>
+        <div class="imgs-div">
+          <img src="./images/vector.svg" alt="vector-img" class="vector-img" />
+          <img
+            src="./images/vector-dot.svg"
+            alt="vector-dot"
+            class="vector-dot"
+          />
+          <img class="hero-img" src="./images/intro-img.svg" alt="intro-img" />
+        </div>
+      </div>
+    
+    <script>
+      const navBtn = document.getElementById("nav-toggle");
+      const links = document.getElementById("nav-links");
+
+      navBtn.addEventListener("click",()=>{
+        links.classList.toggle("show-links");
+      })
+    </script>
+  </body>
+</html>
